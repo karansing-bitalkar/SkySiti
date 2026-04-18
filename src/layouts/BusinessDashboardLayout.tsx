@@ -14,9 +14,9 @@ const items = [
 
 export default function BusinessDashboardLayout() {
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50">
-      <DashboardSidebar items={items} role="Business" roleColor="bg-secondary-100 text-secondary-700" />
-      <main className="flex-1 overflow-y-auto">
+    <div className="flex h-screen overflow-hidden bg-slate-50 dark:bg-slate-950">
+      <DashboardSidebar items={items} role="Business" roleColor="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-400" />
+      <main className="flex-1 overflow-y-auto bg-slate-50 dark:bg-slate-950">
         <Outlet />
       </main>
     </div>

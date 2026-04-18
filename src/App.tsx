@@ -71,13 +71,19 @@ function ProtectedRoute({ children, allowedRoles }: { children: React.ReactNode;
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center bg-white dark:bg-slate-950">
       <div className="text-center">
-        <div className="w-10 h-10 border-3 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+        <div className="w-10 h-10 border-2 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
         <p className="text-slate-500 dark:text-slate-400 text-sm">Loading...</p>
       </div>
     </div>
   );
   if (!user) return <Navigate to="/login" replace />;
-  if (allowedRoles && !allowedRoles.includes(user.role)) return <Navigate to={`/dashboard/${user.role}`} replace />;
+  if (allowedRoles && !allowedRoles.includes(user.role)) {
+    const dashPath = user.role === 'business' ? '/dashboard/business'
+      : user.role === 'organizer' ? '/dashboard/organizer'
+      : user.role === 'admin' ? '/dashboard/admin'
+      : '/dashboard/user';
+    return <Navigate to={dashPath} replace />;
+  }
   return <>{children}</>;
 }
 

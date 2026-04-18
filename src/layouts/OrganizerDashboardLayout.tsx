@@ -12,9 +12,9 @@ const items = [
 
 export default function OrganizerDashboardLayout() {
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50">
-      <DashboardSidebar items={items} role="Organizer" roleColor="bg-accent-100 text-accent-700" />
-      <main className="flex-1 overflow-y-auto">
+    <div className="flex h-screen overflow-hidden bg-slate-50 dark:bg-slate-950">
+      <DashboardSidebar items={items} role="Organizer" roleColor="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400" />
+      <main className="flex-1 overflow-y-auto bg-slate-50 dark:bg-slate-950">
         <Outlet />
       </main>
     </div>

@@ -14,9 +14,9 @@ const items = [
 
 export default function AdminDashboardLayout() {
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50">
-      <DashboardSidebar items={items} role="Admin" roleColor="bg-red-100 text-red-600" />
-      <main className="flex-1 overflow-y-auto">
+    <div className="flex h-screen overflow-hidden bg-slate-50 dark:bg-slate-950">
+      <DashboardSidebar items={items} role="Admin" roleColor="bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400" />
+      <main className="flex-1 overflow-y-auto bg-slate-50 dark:bg-slate-950">
         <Outlet />
       </main>
     </div>
