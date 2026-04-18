@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Search, MapPin } from 'lucide-react';
 import { MOCK_BUSINESSES, CATEGORIES } from '@/constants';
 import BusinessCard from '@/components/features/BusinessCard';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/components/features/Pagination';
 import DashboardTopbar from '@/layouts/DashboardTopbar';
 
 const ITEMS_PER_PAGE = 6;

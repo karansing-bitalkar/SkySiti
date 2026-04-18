@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Search, Tag, Percent, Clock, Sparkles } from 'lucide-react';
 import { MOCK_OFFERS, OFFER_CATEGORIES } from '@/constants';
 import OfferCard from '@/components/features/OfferCard';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/components/features/Pagination';
 
 const ITEMS_PER_PAGE = 6;
 

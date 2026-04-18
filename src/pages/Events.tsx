@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Search, Calendar, Filter } from 'lucide-react';
 import { MOCK_EVENTS, EVENT_CATEGORIES } from '@/constants';
 import EventCard from '@/components/features/EventCard';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/components/features/Pagination';
 import { toast } from 'sonner';
 
 const ITEMS_PER_PAGE = 6;

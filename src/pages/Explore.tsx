@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { Search, MapPin, SlidersHorizontal, Grid3X3, List, Star, Clock, CheckCircle, X, ChevronDown } from 'lucide-react';
 import { MOCK_BUSINESSES, CATEGORIES } from '@/constants';
 import BusinessCard from '@/components/features/BusinessCard';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/components/features/Pagination';
 
 const ITEMS_PER_PAGE = 6;
 const SORT_OPTIONS = [
